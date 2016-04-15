@@ -12,6 +12,8 @@ if [[ -d ~/code ]]; then
     export CODE_DIR=~/code
 fi
 
+# Use emacs keymap
+bindkey -e
 # source all .zsh files inside of the zsh/ directory
 for config ($ZSH/**/*.zsh) source $config
 
@@ -81,5 +83,5 @@ BASE16_SHELL="$DOTFILES/.config/base16-shell/$THEME.$BACKGROUND.sh"
 # [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 source $BASE16_SHELL
 
-
+bindkey "^R" history-incremental-search-backward
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

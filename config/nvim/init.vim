@@ -66,6 +66,7 @@ Plug 'tpope/vim-markdown', { 'for': 'markdown' } " markdown support
 Plug 'fatih/vim-go', { 'for': 'go' } " go support
 Plug 'timcharper/textile.vim', { 'for': 'textile' } " textile support
 Plug 'tclem/vim-arduino' " arduino support - compile wihtout needing to open the arduino IDE
+Plug 'henrik/vim-indexed-search' "Shows total matches for search
 
 call plug#end()
 
@@ -74,7 +75,7 @@ call plug#end()
 " Section General {{{
 
 " load plugins from vundle
-" source ~/.vim/plugins.vim
+"source ~/.vim/plugins.vim
 
 " Abbreviations
 abbr funciton function
